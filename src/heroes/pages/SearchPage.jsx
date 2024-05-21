@@ -32,7 +32,7 @@ export const SearchPage = () => {
             <hr />
 
             <div className="row">
-                <div className="col-5">
+                <div className="col-lg-5 col-sm-12 mb-sm-5">
                     <h4>Searching</h4>
                     <hr />
 
@@ -50,7 +50,7 @@ export const SearchPage = () => {
                     </form>
                 </div>
 
-                <div className="col-7">
+                <div className="col-lg-7">
                     <h4>Results</h4>
                     <hr />
 

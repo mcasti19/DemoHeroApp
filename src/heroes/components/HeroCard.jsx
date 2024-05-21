@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import '../../styles.css';
 
 const CharacterByHero = ( { alter_ego, characters } ) => {
     return ( alter_ego == characters ) ? ( <></> ) : <p>{ characters }</p>
@@ -19,11 +20,13 @@ export const HeroCard = ( {
             <div className="card">
 
                 <div className="row no-gutters">
-                    <div className="col-4">
+                    <div className="img-thumbnail">
                         <img src={ heroImgUrl } alt={ superhero } className="card-img" />
                     </div>
-                    <div className="col-8">
-                        <div className="card-body">
+
+
+                    <div className="d-flex flex-wrap justify-content-center">
+                        <div className="card-body text-center">
                             <h5 className="card-title">
                                 { superhero }
                             </h5>
