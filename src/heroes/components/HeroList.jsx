@@ -5,11 +5,6 @@ import { useMemo } from "react";
 
 
 export const HeroList = ( { publisher } ) => {
-    // console.log( 'Publisher', publisher );
-
-    // const heroes = getHeroesByPublisher( publisher );
-    // console.log( { heroes } );
-
     const heroes = useMemo( () => getHeroesByPublisher( publisher ), [publisher] );
 
     return (
@@ -19,7 +14,6 @@ export const HeroList = ( { publisher } ) => {
                     <HeroCard key={ hero.id }
                         { ...hero }
                     />
-
                 ) )
             }
         </div>
