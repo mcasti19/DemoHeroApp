@@ -4,9 +4,6 @@ import { authReducer } from './authReducer';
 
 import { types } from '../types/types';
 
-
-
-
 const init = () => {
 
     const user = JSON.parse( localStorage.getItem( 'user' ) );
@@ -36,7 +33,6 @@ export const AuthProvider = ( { children } ) => {
         const action = { type: types.logout }
         dispatch( action );
     }
-
 
     return (
         <AuthContext.Provider value={ {
