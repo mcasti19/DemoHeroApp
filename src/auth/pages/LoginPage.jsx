@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom"
 import { AuthContext } from "../context";
 import { useForm } from "../../hooks/userForm";
 
-import '../../styles.css';
-
 
 export const LoginPage = () => {
 
