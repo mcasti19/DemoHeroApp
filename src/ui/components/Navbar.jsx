@@ -17,49 +17,16 @@ export const Navbar = ( pros ) => {
     const logoMarvel = `./marvel.png`;
     const logoDc = `./dc.png`;
 
+    //TODO arreglar el efecto del scroll al entrar en la HeroPage ya que los heroes de la 2da linea hacia abajo abren su info en diagonal 
+
     return (
         <>
-            {/* <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2" >
-
-                <Link className="navbar-brand" >Asociaciones</Link>
-
-                <div className="navbar-collapse">
-                    <div className="navbar-nav">
-
-                        <NavLink to="marvel"
-                            className={ ( { isActive } ) => `nav-item nav-link ${ isActive ? 'active' : '' }` }>Marvel
-                        </NavLink>
-
-                        <NavLink to="dc"
-                            className={ ( { isActive } ) => `nav-item nav-link ${ isActive ? 'active' : '' }` }>DC
-                        </NavLink>
-
-                        <NavLink to="search"
-                            className={ ( { isActive } ) => `nav-item nav-link ${ isActive ? 'active' : '' }` }>Search
-                        </NavLink>
-
-                    </div>
-                </div>
-
-                <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
-                    <ul className="navbar-nav ml-auto">
-                        <span className='nav-item nav-link text-warning'><strong>Bienvenido:</strong> { user?.name }</span>
-
-                        <button
-                            className='nav-item nav-link btn'
-                            onClick={ onLogout }
-                        >Logout
-                        </button>
-                    </ul>
-                </div>
-            </nav> */}
-
-            <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">
+            <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2 sticky-top">
                 <div className="container-fluid">
 
                     <div className="collapse navbar-collapse text-center" id="navbarTogglerDemo03">
-                        <ul className="navbar-nav me-auto mb-lg-0 d-flex align-items-center">
 
+                        <ul className="navbar-nav me-auto mb-lg-0 d-flex align-items-center">
                             <li className="nav-item">
                                 <NavLink to="marvel"
 
@@ -78,10 +45,11 @@ export const Navbar = ( pros ) => {
                                 <NavLink to="search"
                                     className={ ( { isActive } ) => `nav-item nav-link ${ isActive ? 'active' : '' }` }>
                                     <i className="fa-solid fa-magnifying-glass fa-beat-fade fa-lg" style={ { color: '#B197FC' } }></i>
-                                    
+
                                 </NavLink>
                             </li>
                         </ul>
+
                         <div className="text-center">
                             <ul className="navbar-nav ml-auto">
                                 <span className='nav-item nav-link text-danger'><strong>Bienvenido: </strong>{ user?.name }</span>

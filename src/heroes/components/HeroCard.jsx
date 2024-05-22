@@ -31,7 +31,7 @@ export const HeroCard = ( {
                             </h5>
                             <p className="card-text">{ alter_ego }</p>
 
-                            <CharacterByHero alter_ego={ alter_ego } characters={ characters } />
+                            {/* <CharacterByHero alter_ego={ alter_ego } characters={ characters } /> */}
 
                             <p className="card-text">
                                 <small className="text-muted">{ first_appearance }</small>

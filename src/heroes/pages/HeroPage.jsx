@@ -15,6 +15,7 @@ export const HeroPage = () => {
     if ( !hero ) {
         return <Navigate to="/marvel" />
     }
+    //TODO arreglar el efecto del scroll al entrar en la HeroPage ya que los heroes de la 2da linea hacia abajo abren su info en diagonal 
 
     return (
         <div className="row mt-5">
