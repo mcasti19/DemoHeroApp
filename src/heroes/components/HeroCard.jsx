@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import '../../styles.css';
+
 
 const CharacterByHero = ( { alter_ego, characters } ) => {
     return ( alter_ego == characters ) ? ( <></> ) : <p>{ characters }</p>
