@@ -40,6 +40,7 @@ export const LoginPage = () => {
                     autoComplete="off"
                     value={ user }
                     onChange={ onInputChange }
+                    required
                 />
 
                 <input
@@ -50,6 +51,7 @@ export const LoginPage = () => {
                     placeholder="Ingresa tu password"
                     value={ password }
                     onChange={ onInputChange }
+                    required
                 />
 
                 <button className="btn btn-primary">
