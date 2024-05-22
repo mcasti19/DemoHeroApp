@@ -14,6 +14,9 @@ export const Navbar = ( pros ) => {
         } );
     }
 
+    const logoMarvel = `./marvel.png`;
+    const logoDc = `./dc.png`;
+
     return (
         <>
             {/* <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2" >
@@ -55,38 +58,43 @@ export const Navbar = ( pros ) => {
                 <div className="container-fluid">
 
                     <div className="collapse navbar-collapse text-center" id="navbarTogglerDemo03">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul className="navbar-nav me-auto mb-lg-0 d-flex align-items-center">
 
-                            <Link className="navbar-brand" >Asociaciones</Link>
                             <li className="nav-item">
                                 <NavLink to="marvel"
-                                    className={ ( { isActive } ) => `nav-item nav-link ${ isActive ? 'active' : '' }` }>Marvel
+
+                                    className={ ( { isActive } ) => `nav-item nav-link ${ isActive ? 'active' : '' }` }>
+                                    <img src={ logoMarvel } alt="Logo Marvel" className='imglogo' width="70" />
                                 </NavLink>
+
                             </li>
                             <li className="nav-item">
                                 <NavLink to="dc"
-                                    className={ ( { isActive } ) => `nav-item nav-link ${ isActive ? 'active' : '' }` }>DC
+                                    className={ ( { isActive } ) => `nav-item nav-link ${ isActive ? 'active' : '' }` }>
+                                    <img src={ logoDc } alt="Logo Marvel" className='imglogo' width="50" />
                                 </NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink to="search"
-                                    className={ ( { isActive } ) => `nav-item nav-link ${ isActive ? 'active' : '' }` }>Search
+                                    className={ ( { isActive } ) => `nav-item nav-link ${ isActive ? 'active' : '' }` }>
+                                    <i className="fa-solid fa-magnifying-glass fa-beat-fade fa-lg" style={ { color: '#B197FC' } }></i>
+                                    
                                 </NavLink>
                             </li>
                         </ul>
                         <div className="text-center">
                             <ul className="navbar-nav ml-auto">
-                                <span className='nav-item nav-link text-warning'><strong>Bienvenido:</strong> { user?.name }</span>
+                                <span className='nav-item nav-link text-danger'><strong>Bienvenido: </strong>{ user?.name }</span>
                                 <button
                                     className='nav-item nav-link btn'
                                     onClick={ onLogout }
-                                >Logout
+                                ><i className="fa-solid fa-right-from-bracket fa-lg" style={ { color: '#ec9d28' } }></i>
                                 </button>
                             </ul>
                         </div>
                     </div>
                     <button
-                        class="navbar-toggler"
+                        className="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo03"
@@ -94,12 +102,11 @@ export const Navbar = ( pros ) => {
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
-                        <span class="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon"></span>
                     </button>
                 </div>
             </nav>
         </>
-
     )
 };
 

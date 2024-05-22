@@ -20,10 +20,9 @@ export const HeroCard = ( {
             <div className="card">
 
                 <div className="row no-gutters">
-                    <div className="img-thumbnail">
-                        <img src={ heroImgUrl } alt={ superhero } className="card-img" />
+                    <div className="">
+                        <img src={ heroImgUrl } alt={ superhero } className="card-img-top" />
                     </div>
-
 
                     <div className="d-flex flex-wrap justify-content-center">
                         <div className="card-body text-center">
