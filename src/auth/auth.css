@@ -13,15 +13,28 @@
     height: 100vh;
     background-color: rgb(0, 0, 0);
     /* border: 1px solid silver; */
-    background-image: url('./marvelVSdc.jpg');
-    background-size: cover;
-    background-repeat: round;
+    /* background-image: url('./marvelVSdc.jpg'); */
+    /* background-size: cover;
+    background-repeat: round; */
+}
+
+.img_logo_large {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.img_logo_small {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: none;
 }
 
 .content_login {
     /* border: 1px solid silver; */
-
-
+    position: absolute;
+    z-index: 2;
     min-width: 350px;
 }
 
@@ -39,13 +52,16 @@
 /* MediaQueries */
 
 @media (width < 600px) {
-    .login_page {
-        background-image: url('./fondologin2.jpeg');
-        background-repeat: round;
-    }
-
     .title_bienvenido {
         color: black;
 
+    }
+
+    .img_logo_small {
+        display: block;
+    }
+
+    .img_logo_large {
+        display: none;
     }
 }

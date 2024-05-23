@@ -27,6 +27,8 @@ export const LoginPage = () => {
     return (
         <>
             <div className="login_page">
+                <img src="./marvelVSdc.jpg" alt="" className="img_logo_large" />
+                <img src="./fondologin2.jpeg" alt="" className="img_logo_small" />
                 <div className="content_login">
                     <h1 className="title_bienvenido">Bienvenido</h1>
                     <hr />
