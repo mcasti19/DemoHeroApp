@@ -5,15 +5,32 @@
 }
 
 .dc_page {
-    background-color: green;
+    background-color: black;
+}
+
+.hero_page {
+    display: flex;
+    background-color: black;
+    min-height: 100vh;
+}
+
+.hero_page_content {
+
+    /* border: 1px solid white; */
+    width: 90%;
+    margin: auto;
+    margin-top: 16px;
+    color: silver;
 }
 
 .search_page {
-    background-color: grey;
-    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+    color: silver;
 }
 
 .hero_list {
     width: 80%;
     margin: auto;
+
 }
